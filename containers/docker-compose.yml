@@ -1,0 +1,11 @@
+# Network
+networks:
+    hikoukigumo:
+      driver: bridge
+
+services:
+  backend:
+    build:
+      context: ./backend
+    networks:
+      - hikoukigumo
